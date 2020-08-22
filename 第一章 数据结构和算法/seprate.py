@@ -9,7 +9,23 @@ arr = [1, 'a', ['a', 'b', 'c'], 1.2, True]
 # PHP中相同的功能需要通过list()函数来实现： list($a, $b) = [111, 'aaa']
 var_int, var_string, var_arr, var_float, var_bool = arr
 print([var_int, var_string, var_arr, var_float, var_bool])
+print()
 
 # 空白占位符可以在这种方式创建变量时抛弃序列中不需要的元素
 _, _, _, var_last = [1, 2, 4, 'I am last']
 print(var_last)
+print()
+
+# 任何可迭代的数据都可以采用此方式分解为单独的变量
+var_int, var_string, _ = (12, 'I am string', 12.5)
+print([var_int, var_string])
+print()
+
+# 字典分解为单独的变量时，变量存储的是字典的键而非值
+var_int, var_string, _ = {'key_int': 12, 'key_string': 'I am string', 'float' : 12.5}
+print([var_int, var_string])
+print()
+
+var_g, var_o, var_d = 'God'
+print([var_g, var_o, var_d])
+print()
