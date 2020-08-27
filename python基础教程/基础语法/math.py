@@ -32,3 +32,16 @@ print(power_int, power_float)
 truncate_int = 12 // 5
 truncate_float = 144.333  // 33
 print(truncate_int, truncate_float)
+
+# 表示16进制数
+var_dec = 1001
+var_hex = 0x3e9
+print('数值 {:d} 的十六进制表示为 {:s}'.format(var_hex,hex(var_dec)))
+
+# 表示8进制数
+var_oct = 0o1751
+print('数值 {:d} 的八进制表示为 {:s}'.format(var_oct,oct(var_dec)))
+
+# 表示二进制数
+var_bin = 0b1111101001
+print('数值 {:d} 的二进制表示为 {:s}'.format(var_bin,bin(var_dec)))
