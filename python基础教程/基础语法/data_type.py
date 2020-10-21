@@ -1,3 +1,7 @@
+#-----------------------------------
+# python 所有数据类型
+#-----------------------------------
+
 # 字符串
 var_str = '我是一个字符串'
 print(type(var_str))
@@ -28,3 +32,7 @@ var_dict = {
     (1, 'a'): '123'
 }
 print(type(var_dict))
+
+# 空
+var_none = None
+print(type(var_none))
